@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<meta charset="UTF-8">
+	  	<title>Smash Faces</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  	<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<section class="smashface">
+			<div class="container">
+				<h1>SMASH FACES</h1>
+				<p>Bienvenidas al juego de Smash Faces, tu misión es poder identificar a todas tus compañeras de clase ingreando para ello su nombre. Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
+				<nav class="navbar navbar-default">
+  					<div class="container-fluid">
+    					<!-- Brand and toggle get grouped for better mobile display -->
+    					<div class="navbar-header">
+      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        					<span class="sr-only">Toggle navigation</span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+      					</button>
+      					<a class="navbar-brand" href="#">Elige tu sede: </a>
+    					</div>
+
+    					<!-- Collect the nav links, forms, and other content for toggling -->
+    					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      					<select class="capital">
+      						<option value="0">Selecciona..</option>
+					  		<option value="1">Lima</option>
+					  		<option value="2">México</option>
+						</select>
+      					<ul class="nav navbar-nav navbar-right">
+        					<li><a href="#">Puntos: <span></span></a></li>
+      					</ul>
+    					</div><!-- /.navbar-collapse -->
+  					</div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</section>
+		<section id="game">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div id="cajafotos">
+					
+						</div>
+					</div>
+					<div class="col-md-6">
+						<form role="form">
+							<input type="text" class="form-control" placeholder="Nombre...">
+							<p><a class="btn btn-primary btn-lg" href="#" role="button" id="boton">Comprobar</a></p>
+							<p id="texto"></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/peru.js"></script>
+		<script src="js/mexico.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
